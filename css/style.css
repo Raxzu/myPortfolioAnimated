@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --light-color: #EEEEEE;
+    --secondary-color: #d3b6b6;
+    --primay-color: #8E1616;
+    --text-color: #1D1616;
+    --text-background: #d840404f;
+    --background-color: #e0e0e0;
+}
+* {
+    font-family: "Roboto", sans-serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-family: "Roboto", sans-serif;
+    max-width: 1500px;
+    margin: auto;
+}
+.container {
+    width: 100%;
+    color: var(--primay-color);
+}
+.logo-menu{
+    display: grid;
+    margin: 5px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+}
+.JesterLogo{
+    width: 118px;
+    height: 118px;
+    object-fit: cover;
+    margin: 25px;
+    justify-self: start;
+}
+.hamburgerMenu{
+    display: flex;
+    flex-direction: column;
+    width: 62px;
+    height: 62px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid var(--primay-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+.menu{
+    padding: 10px;
+    justify-self: end;
+}
+.line{
+    height: 3px;
+    width: 37px;
+    border-radius: 10px;
+    background-color: var(--primay-color);
+}
+.profile{
+    text-align: center;
+}
+.profile-image img {
+    display: inline-block;
+    object-fit: cover;
+    height: 226px;
+    width: 226px;
+    border-radius: 50%;
+}
+hr{
+    width: 132px;
+    height: 12px;
+    background-color: var(--primay-color);
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border: none;
+    z-index: -1;
+}
+.headline h3{
+    text-align: center;
+    font-family: "Inknut Antiqua", serif;
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primay-color);
+    line-height: 50px;
+}
+.frame{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.frame img{
+    display: inline-block;
+    width: 307px;
+    height: 153px;
+    object-fit: cover;
+    border: var(--primay-color);
+    border-style: solid;
+    margin: 15px;
+}
+.myClients{
+    width: 100%;
+}
+.card{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+    color: var(--text-color);
+}
+h4{
+    font-family: "Inknut Antiqua", serif;
+    font-size: 32px;
+    margin: 15px;
+    line-height: 45px;
+}
+.card span{
+    display: inline-block;
+    background-color: var(--text-background);
+    color: var(--primay-color);
+    padding: 3px;
+}
+.card p{
+    margin: 15px auto;
+    width: 370px;
+}
+.contactMe{
+    width: 100%;   
+    text-align: center;
+}
+.contactMe button{
+    border: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-color: var(--primay-color);
+    background-color: var(--text-background);
+    color: var(--primay-color);
+    padding: 20px 28px;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.socialmedia{
+    width: 100%;
+    text-align: center;
+}
+.socialmedia h4{
+    color: var(--text-color);
+    font-size: 23px;
+}
+.social ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social ul li{
+    display: inline-block;
+    margin: 19px;
+}
+.footer{
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 70px;
+}
+.menuList{
+    display: none;
+}
+.gallery{
+    display: none;
+}
+.checkWorks{
+    display: none;
+}
+.contactBig{
+    display: none;
+}
+.contactForm{
+    display: none;
+}
+.carBig{
+    display: none;
+}
+.vrBig{
+    display: none;
+}
+.myWorksIntro{
+    display: none;
+}
+.contactDetails1{
+    display: none;
+}
+.contactDetails2{
+    display: none;}
+@media (min-width: 600px) and (max-width:1024px) {
+    .hamburgerMenu{
+        display: none;
+    }
+    .menuList{
+        display: contents;
+    }
+    .menuList ul{
+        font-family: "Inknut Antiqua", serif;
+        text-transform: capitalize;
+        list-style: none;
+        padding: 0px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .menuList ul li{
+        display: inline-block;
+        margin: 7px;
+    }
+    .menuList ul li a{
+        display: inline-block;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+    .profile{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .checkWorks{
+        display: flex;
+        justify-self: start;
+        align-items: center;
+    }
+    .checkWorks button{
+        display: grid;
+        border: none;
+        width: 325px;
+        font-weight: bold;
+        border-color: var(--primay-color);
+        background-color: var(--text-background);
+        color: var(--primay-color);
+        border-radius: 50px;
+        font-size: 24px;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+    }
+    .checkWorks img{
+        justify-self: end;
+    }
+    .profile-image img {
+        height: 270px;
+        width: 270px;
+        border-radius: 50%;
+    }
+    .profile-span{
+        font-size: 25px;
+        padding: 15px;
+        text-align: start;
+        margin-left: 24px;
+    }
+    .frame{
+        display: none;
+    }
+    .gallery{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .gallery-item img{
+        margin: auto;
+        width: 307px;
+        height: 153px;
+        object-fit: cover;
+        border-style: solid;
+        border-radius: 3px;
+        border-color: var(--primay-color);
+        margin: 10px;
+    }
+    .headline{
+        padding-top: 30px;
+        justify-self: start;
+        margin-left: 50px;
+    }
+    .contactBig{
+        display: contents;
+    }
+    .btn-contactme{
+        display: none;
+    }
+    .contact-intro{
+        width: 100%;
+    }
+    .contact-intro p{
+
+        width: 70%;
+        text-align: start;
+        color: var(--text-color);
+        margin-left: 53px;
+    }
+    .contactForm{
+        display: contents;
+        width: 100%;
+        font-size: 16px;
+    }
+    .contactForm form{
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    input, textarea{
+        width: 100%;
+        background-color: var(--text-background);
+        border: none;
+    }
+    input:focus, textarea:focus{
+        outline: none;
+        background-color: var(--text-background);
+        box-sizing: border-box;
+        border-top: 2px solid var(--primay-color);
+        border-left: 2px solid var(--primay-color);
+    }
+/*Autofill color block timer, Start->*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+        transition: background-color 0s 600000s, color 0s 600000s !important;
+    }
+/*<-End, Autofill color block timer*/
+    input, textarea{
+        width: 100%;
+        background-color: var(--text-background);
+    }
+    input{
+        height: 25px;
+    }
+    .btn-area button{
+        display: grid;
+        border: 7px;
+        border-color: var(--primay-color);
+        background-color: var(--text-background);
+        color: var(--primay-color);
+        border-radius: 5px;
+        font-size: 18px;
+        margin-top: 30px;
+        padding: 7px 25px;
+        justify-self: end;
+    }
+    .contactDetails2{
+        display: none;
+    }
+    .contactDetails1{
+        display: contents;
+    }
+    .contactDetails1 ul{
+        list-style: none;
+        padding: 0px;
+    }
+    .contactDetails1 li{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        align-items: center;
+        margin: 3px;
+    }
+    .contactDetails1 img{
+        display: grid;
+        justify-self: end;
+        margin-right: 5px;
+    }
+    .belowsendit{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .socialmedia {
+        text-align: start;
+        margin-left: 50px;
+    }
+    .social{
+        margin-left: -10px;
+    }
+}
+@media (min-width: 1025px){
+    .profile-span{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: none;
+    }
+    .menuList{
+        display: contents;
+    }
+    .menuList ul{
+        font-family: "Inknut Antiqua", serif;
+        text-transform: capitalize;
+        list-style: none;
+        font-size: 35px;
+        font-weight: bold;
+        padding: 20px;
+        margin: 0px;
+    }
+    .menuList ul li{
+        display: inline-block;
+        margin: 0px 23px;
+    }
+    .menuList ul li a{
+        display: inline-block;
+        text-decoration: none;
+        color: var(--text-color);
+        transition: transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .menuList ul li a:hover {
+        transform: scale(1.2);
+        color: (var(--primay-color));
+        text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.2);
+    }
+    .profile{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .checkWorks{
+        display: flex;
+        justify-self: start;
+        align-items: center;
+    }
+    .checkWorks button{
+        display: grid;
+        border: none;
+        width: 325px;
+        font-weight: bold;
+        border-color: var(--primay-color);
+        background-color: var(--text-background);
+        color: var(--primay-color);
+        border-radius: 50px;
+        font-size: 24px;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+    }
+    .checkWorks img{
+        justify-self: end;
+    }
+    .profile-image img {
+        height: 428px;
+        width: 428px;
+        border-radius: 50%;
+    }
+    .profile-span{
+        font-size: 25px;
+        padding: 15px;
+        text-align: start;
+        margin-left: 24px;
+    }
+    .frame{
+        display: none;
+    }
+    .gallery{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        text-align: center;
+        margin: 10px auto;
+    }
+    .gallery-item img{
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        border-style: solid;
+        border-radius: 3px;
+        border-color: var(--primay-color);
+        margin: 10px;
+        padding: 0px;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .gallery-item img:hover{
+        transform: scale(1.05);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    }
+    .headline{
+        padding-top: 30px;
+        justify-self: start;
+        margin-left: 50px;
+    }
+    .contactBig{
+        display: contents;
+    }
+    .btn-contactme{
+        display: none;
+    }
+    .contact-intro{
+        width: 100%;
+    }
+    .contact-intro p{
+
+        width: 70%;
+        text-align: start;
+        color: var(--text-color);
+        margin-left: 53px;
+    }
+    .contactForm{
+        display: contents;
+        width: 100%;
+        font-size: 16px;
+    }
+    .contactForm form{
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+    input, textarea{
+        width: 100%;
+        background-color: var(--text-background);
+        border: none;
+    }
+    input:focus, textarea:focus{
+        outline: none;
+        background-color: var(--text-background);
+        box-sizing: border-box;
+        border-top: 2px solid var(--primay-color);
+        border-left: 2px solid var(--primay-color);
+    }
+    /*Autofill color block timer, Start->*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+      transition: background-color 0s 600000s, color 0s 600000s !important;
+    }
+    /*<-End, Autofill color block timer*/
+    input{
+        height: 25px;
+    }
+    .btn-area button{
+        display: grid;
+        border: 7px;
+        border-color: var(--primay-color);
+        background-color: var(--text-background);
+        color: var(--primay-color);
+        border-radius: 5px;
+        font-size: 18px;
+        margin-top: 30px;
+        padding: 7px 25px;
+        justify-self: end;
+    }
+    .btn-area{
+        grid-column: 2;
+    }
+    .contactDetails1{
+        display: none;
+    }
+    .contactDetails2{
+        display: contents;
+    }
+    .contactDetails2 ul{
+        list-style: none;
+        padding: 0px;
+    }
+    .contactDetails2 li{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        align-items: center;
+        margin: 3px;
+        margin-left: 10px;
+    }
+    .contactDetails2 img{
+        display: grid;
+        justify-self: end;
+        margin-right: 5px;
+    }
+    .socialmedia h4{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .belowsendit{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contactGrid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .socialmedia {
+        text-align: start;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .social{
+        margin-left: -10px;
+    }
+    .carBig{
+        display: grid;
+        grid-row: 1 / 4;
+        justify-self: end;
+    }
+    .vrBig{
+        display: grid;
+        grid-row: 1 / 4;
+        justify-self: end;
+    }
+    .carSmall{
+        display: none;
+    }
+    .vrSmall{
+        display: none;
+    }
+    .card{
+        display: grid;
+        margin: 25px;
+        grid-template-columns: auto auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        text-align: start;
+    }
+    .card p{
+
+        width: 370px;
+        text-align: start;
+        margin-left: 30px;
+    }
+    .card span{
+        text-align: start;
+        margin-left: 30px;
+    }
+    .card h4{
+        margin-left: 30px;
+    }
+    .card img{
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    .borders{
+        display: block;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #1d161638;
+        margin: 25px;
+    }
+    .myWorksIntro{
+        display: block;
+        width: 75%;
+        text-align: left;
+        margin-left: 25px;
+    }
+    button{
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    button:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+    }
+}
