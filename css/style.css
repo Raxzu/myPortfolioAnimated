@@ -19,6 +19,7 @@ body {
     font-family: "Roboto", sans-serif;
     max-width: 1500px;
     margin: auto;
+    overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -168,7 +169,34 @@ h4{
     padding-top: 70px;
 }
 .menuList{
-    display: none;
+    top: 0px;
+    right: -300px;
+    position: absolute;
+    width: 205px;
+    height: 280px;
+    background-color: #DDADAF;
+    border-radius: 15px 0px 0px 15px;
+    transition: right 0.3s ease-in-out;
+
+}
+.menuList ul{
+    font-family: "Inknut Antiqua", serif;
+    text-transform: capitalize;
+    list-style: none;
+    padding: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.menuList ul li{
+    margin: 30px;
+}
+.menuList ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.menuList.active{
+    right: 0px;
 }
 .gallery{
     display: none;
